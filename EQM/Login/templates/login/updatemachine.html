@@ -1,0 +1,51 @@
+<style type="text/css">
+	th,td
+	{
+		text-align: left;
+		border-bottom: 1px solid black;
+		color:#000080;
+	}
+</style>
+<body bgcolor="white">
+{% if machine %}
+<center>
+ <table  style="background-color: white; border:1px solid white; width:800px ;height: 500px;margin-top:100px; border-collapse: collapse; ">
+    <tr>
+      <th>MachineName</th>
+      <th>Manufacturer</th>
+      <th>Serial Number</th>
+      <th>Model</th>
+      <th>Status</th>
+      <th>Support Link</th>
+      <th>Description</th><th>OperatingSystem</th>
+      <th> EmployeeId</th> <th> Location</th> <th>Department</th> <th>ServiceDate</th> <th> Specification</th> <th> PurchasePrice</th>
+     </tr>
+   {% for viewmachines in machine %}
+   <tr>
+   <td> {{ viewmachines.MachineName }}</td>
+   <td> {{ viewmachines.Manufacturer}}</td>
+   <td> {{ viewmachines.SerialNumber}}</td>
+   <td>{{ viewmachines.Model}}</td>
+   <td>{{ viewmachines.Status}}</td>
+   
+   <td>{{ viewmachines.SupportLink}}</td>
+   <td>{{viewmachines.Description}}</td>
+   <td>{{ viewmachines.OperatingSystem}}</td>
+   <td>{{viewmachines.EmployeeId}}</td>
+   <td>{{viewmachines.Location}}</td>
+   <td>{{ viewmachines.Department}}</td>
+   <td>{{ viewmachines.ServiceDate}}</td>
+   <td>{{viewmachines.Specification}}</td>
+   <td>{{ viewmachines.PurchasePrice}}</td>
+      <td><a href="/login/editmachine"><button >Edit</button></a></td>
+      <td><a href="/login/deletemachine"><button>Delete</button></a></td>
+   </tr>
+
+   {% endfor %}
+
+   </table>
+ </center>
+ {% else %}
+     <h3>no user</h3>
+{% endif %}	 
+</body>

@@ -1,0 +1,29 @@
+1507198882218	geckodriver	INFO	geckodriver 0.19.0
+1507198882249	geckodriver	INFO	Listening on 127.0.0.1:51508
+1507198884343	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofile.5UZyOO0xA0eC"
+1507198885127	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1507198886967	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\Dell\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 4776] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\Dell\AppData\Local\openvr\openvrpaths.vrpath
+[Child 336] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 336] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1507198893059	Marionette	INFO	Listening on port 51514
+1507198893947	Marionette	WARN	TLS certificate errors will be ignored for this session
+1507198894146	Marionette	DEBUG	Register listener.js for window 4294967297
+1507198894240	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1507198894373	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1507198894375	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1507198894396	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://127.0.0.1:8000/login/register/"
+1507198896695	Marionette	DEBUG	Received DOM event "pageshow" for "http://127.0.0.1:8000/login/register/"
+1507198897067	Marionette	INFO	New connections will no longer be accepted
+[Parent 4776] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+ve IPC close with reason=AbnormalShutdown
+is not defined
+1507124738121	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:8081/login/"
+1507124738588	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:8081/login/"
+1507124739304	Marionette	INFO	New connections will no longer be accepted
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown

@@ -1,0 +1,38 @@
+<style type="text/css">
+	th,td
+	{
+		text-align: left;
+		border-bottom: 1px solid black;
+		color:#000080;
+	}
+</style>
+<body bgcolor="white">
+{% if machine %}
+<center>
+ <table  style="background-color: white; border:1px solid white; width:800px ;height: 500px;margin-top:100px; border-collapse: collapse; ">
+    <tr>
+      <th>Category</th>
+      <th>SubCategory</th>
+      <th>MachineName</th>
+      <th>Status</th>
+      <th>Date</th>
+      <th>Vendor Name</th>
+     </tr>
+   {% for viewmachines in machine %}
+   <tr>
+   <td> {{ viewmachines.Category }}</td>
+   <td> {{ viewmachines.SubCategory}}</td>
+   <td> {{ viewmachines.MachineName}}</td>
+   <td>{{ viewmachines.CurrentStatus}}</td>
+   <td>{{ viewmachines.PurchaseDate}}</td>
+   <td>{{ viewmachines.Vendor}}</td>
+   </tr>
+
+   {% endfor %}
+
+   </table>
+ </center>
+ {% else %}
+     <h3>no user</h3>
+{% endif %}	 
+</body>
